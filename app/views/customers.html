@@ -7,6 +7,7 @@ Filter: <input type="text" ng-model="customerFilter.name" />
         <th ng-click="doSort('city')">City</th>
         <th ng-click="doSort('orderTotal')">Order Total</th>
         <th ng-click="doSort('joined')">Joined</th>
+        <th>some modification here</th>
         <th>&nbsp;</th>
     </tr>
     <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
